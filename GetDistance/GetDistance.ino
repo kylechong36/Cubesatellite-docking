@@ -1,18 +1,3 @@
-/******************************************************************************
-  Reads the distance something is in front of LIDAR and prints it to the Serial port
-
-  Priyanka Makin @ SparkX Labs
-  Original Creation Date: Sept 30, 2019
-
-  This code is Lemonadeware; if you see me (or any other SparkFun employee) at the
-  local, and you've found our code helpful, please buy us a round!
-
-  Hardware Connections:
-  Plug Qwiic LIDAR into Qwiic RedBoard using Qwiic cable.
-  Set serial monitor to 115200 baud.
-
-  Distributed as-is; no warranty is given.
-******************************************************************************/
 #include "LIDARLite_v4LED.h"
 
 LIDARLite_v4LED myLIDAR; //Click here to get the library: http://librarymanager/All#SparkFun_LIDARLitev4 by SparkFun
@@ -48,7 +33,7 @@ float spd = 0;
 
 void setup() {
   Serial.begin(115200);
-  Serial.println("Qwiic LIDARLite_v4 examples");
+  Serial.println("Connection test");
   Wire.begin(); //Join I2C bus
 
   //check if LIDAR will acknowledge over I2C
